@@ -15,6 +15,8 @@ class Program
         ListaSuscripciones.Add(new Suscripcion("Beatstars", 359, DateTime.Now.AddDays(7)));
         ListaSuscripciones.Add(new Suscripcion("Netflix", 159, DateTime.Now.AddDays(15)));
 
+        ListaSuscripciones.Add(new Suscripcion("TecNM", 2000, DateTime.Now.AddDays(20)));
+
         double totalGastosMensuales = 0;
 
         foreach (var item in ListaSuscripciones)
