@@ -4,11 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Title = "Gestor de Gastos | POO | TecNM Campus Monclova";
+        Console.Clear();
         Console.BackgroundColor = ConsoleColor.White;
         Console.ForegroundColor = ConsoleColor.Black;
-        Console.WriteLine("=== Sistema Virtual de Gestion de Gastos ===");
-        Console.WriteLine();
+
+        Console.Title = "Gestor de Gastos POO TecNM Campus Monclova";
+
+        Console.WriteLine("════════ Gestor de Gastos POO TecNM ════════");
+        Console.WriteLine("");
 
         List<Suscripcion> ListaSuscripciones = new();
 
@@ -27,8 +30,9 @@ class Program
             {
                 notificador.EnviarNotificacion("Tu suscripcion esta por renovarse.");
             }
-            Console.WriteLine("====================================================");
+            Console.WriteLine("════════════════════════════════════════════════════════════════════════════");
         }
+        Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine($"Total de gastos mensuales: {totalGastosMensuales}");
     }
 }
